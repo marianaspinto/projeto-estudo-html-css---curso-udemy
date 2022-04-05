@@ -4,8 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project 1 - Favourite Foods:</title>
-  
+  <title>Project 1: Favorite Foods</title>
   <style>
     #topbar {
       background-color: #779ecb;
@@ -16,8 +15,13 @@
     .menu-item {
       font-size: 24px;
       padding: 8px;
-      font-weight: 600px;
-      
+      font-weight: 600;
+
+    }
+
+    body {
+      margin: 0;
+      background-color: #def3fd;
     }
 
     #list-heading {
@@ -25,50 +29,55 @@
       padding-left: 24px;
     }
 
-    .food-list-item {
-      font-size: 24px;
-
+    .food-item-list {
+      font-size: 20px;
     }
 
     .food-image {
-      
+      width: 400px;
     }
-    </style>
+
+    .food-wrapper {
+      text-align: center;
+    }
+
+  </style>
 </head>
-<body style="margin: 0; background-color: #def3fd">
+<body>
   <div id="topbar">
     <span class="menu-item">Index</span>
     <span class="menu-item">Food</span>
     <span class="menu-item">About</span>
   </div>
-
   <h3 id="list-heading">Top 5 Favourite Foods</h3>
-  <ul>
-    <li><a class="food-list-item" href="/">Acarajé</a></li>
-    <li><a class="food-list-item" href="/">Moqueca de Banana da Terra</a></li>
-    <li><a class="food-list-item" href="/">Lasagna</a></li>
-    <li><a class="food-list-item" href="/">Burguer</a></li>
-    <li><a class="food-list-item" href="/">Ceaser Salad</a></li>
-  </ul>
-  <div>
-    <img class="food-image"src="WhatsApp Image 2022-04-04 at 19.54.39.jpeg" alt="Acarajé" />
-    <p>Acarajé</p>
-  </div>
-  <div>
-    <img class="food-image" src="https://th.bing.com/th/id/R.1d53e3e8dab9324886fbe5af9310d824?rik=fBPU9%2fXbL9H60g&riu=http%3a%2f%2fviagemglutenfree.com%2fwp-content%2fuploads%2f2021%2f06%2fMoqueca-de-banana-da-terra-710x335.jpg&ehk=%2fXN5OqCzcn4sZDG%2fnTWHaQ8J2L3bUmYw7kBjDMzTbk4%3d&risl=&pid=ImgRaw&r=0" alt="Moqueca de Banana da Terra" />
-    <p>Moqueca de Banana da Terra</p>
-  </div>
-  <div>
-    <img class="food-image" src="https://th.bing.com/th/id/R.b3ef877fa87e8f21ccb54dab13914f27?rik=SgLk%2fAGKLOq0vA&riu=http%3a%2f%2fwww.lopessupermercados.com.br%2fportalrevista%2fwp-content%2fuploads%2f2017%2f12%2fshutterstock_172651517.jpg&ehk=sKcih2Vg3RUowopAcOpYiQJfdIwEODcyQ4IIZ1cGWQA%3d&risl=&pid=ImgRaw&r=0" alt="Feijoada" />
-    <p>Feijoada</p>
-  </div>
-  <div>
-    <img class="food-image" src="https://cdn.guiadacozinha.com.br/wp-content/uploads/2019/10/empadao-de-frango-cremoso-com-milho-40739.jpg" alt="Empadão de frango" />
-    <p>Empadão de Frango</p>
-  </div>
-  <div>
-    <img class="food-image" src="https://th.bing.com/th/id/R.415b2a9cca924fcd6413dc875a2b5eac?rik=LAOJaQZVPgC0Bg&pid=ImgRaw&r=0" alt="Nhoque" />
-    <p>Nhoque</p>
-  </div>
+    <ul>
+      <li><a class="food-item-list" href="#acaraje">Acarajé</a></li>
+      <li><a class="food-item-list" href="#moqueca">Moqueca de Banana da Terra</a></li>
+      <li><a class="food-item-list" href="#feijoada">Feijoada</a></li>
+      <li><a class="food-item-list" href="#empadao">Empadão de Frango</a></li>
+      <li><a class="food-item-list" href="#nhoque">Nhoque</a></li>
+    </ul>
+
+    <div class="food-wrapper">
+      <img id="acaraje" class="food-image" src="https://receitasnotadez.com.br/wp-content/uploads/2020/03/14bd9e85-acaraje_l_thumb.jpg" alt="Acarajé" />
+      <p>Acarajé</p>
+    </div>
+    <div class="food-wrapper">
+      <img id="moqueca" class="food-image" src="https://th.bing.com/th/id/R.bb03faea4c5bd9c6164c37770eee7ea3?rik=Fqu%2fFI6a9Ez2bw&pid=ImgRaw&r=0" alt="Moqueca de Banana da Terra" />
+      <p>Moqueca de Banana da Terra</p>
+    </div>
+    <div id="feijoada" class="food-wrapper">
+      <img class="food-image" src="https://redesuldenoticias.com.br/content/uploads/2018/05/feijoada-receita.jpg" alt="Feijoada" />
+      <p>Feijoada</p>
+    </div>
+    <div id="empadao" class="food-wrapper">
+      <img class="food-image" src="https://cdn.guiadacozinha.com.br/wp-content/uploads/2019/10/empadao-de-frango-cremoso-com-milho-40739.jpg" alt="Empadão de Frango" />
+      <p>Empadão de Frango</p>
+    </div>
+    <div class="food-wrapper">
+      <img id="nhoque" class="food-image" src="https://sifu.unileversolutions.com/image/pt-BR/recipe-topvisual/2/1260-709/nhoque-de-batata-50257479.jpg" alt="Nhoque" />
+      <p>Nhoque</p>
+    </div>
+  
 </body>
 </html>
